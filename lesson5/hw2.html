@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HOMEWORK_5.1</title>
+	<style type="text/css">
+
+		label:hover {
+			cursor: pointer;
+		}
+
+		#red, #green, #blue {
+			visibility: hidden;
+			display: none;
+		} 	/*ПРОПАДАЮТ ГАЛОЧКИ*/
+
+		.red, .green, .blue {
+			display: inline;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			color: white;
+			padding: 2px;
+			width: 55px;
+			height: 15px;
+			border: solid 1px #555;
+		}
+
+		.red {
+			background-color: red;	
+		}
+
+		.green {
+			background-color: green;
+		}
+
+		.blue {
+			background-color: blue;
+		}
+
+		.redbut, .greenbut, .bluebut {
+			text-decoration: underline;
+			font-size: 14pt;
+		}
+
+		#red:checked ~ div1 {
+			display: none;
+		}
+
+		#green:checked ~ div2 {
+			display: none;
+		}
+
+		#blue:checked ~ div3 {
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<input type="checkbox" name="color1" id="red">
+	<input type="checkbox" name="color2" id="green">
+	<input type="checkbox" name="color3" id="blue">
+
+	<label for="red" class="redbut" style="color: red">КРАСНЫЕ</label>
+	<label for="green" class="greenbut" style="color: green">ЗЕЛЁНЫЕ</label>
+	<label for="blue" class="bluebut" style="color: blue">СИНИЕ</label>
+
+	<div1 class="red">красный</div1>
+	<div2 class="green">зелёный</div2>
+	<div2 class="green">зелёный</div2>
+	<div1 class="red">красный</div1>
+	<div3 class="blue">синий</div3>
+	<div2 class="green">зелёный</div2>
+	<div1 class="red">красный</div1>
+	<div3 class="blue">синий</div3>
+	<div1 class="red">красный</div1>	
+	<div2 class="green">зелёный</div2>
+	<div3 class="blue">синий</div3>
+
+</body>
+</html>
