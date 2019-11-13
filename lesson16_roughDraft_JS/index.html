@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // const USER_MSG = prompt('imya tvoyo bistro?', '');
+        // alert(USER_MSG);
+
+        // let x = 2;
+
+        // switch (x+x) {
+        //     case 0:
+        //     alert('0');
+        //     break;
+        //     case 2:
+        //     alert('2');
+        //     break;
+        //     case 4: 
+        //     alert('ti dodik');
+        //     break;
+        //     default: 
+        //     alert('ti poigral');
+        //     break;
+        // };
+
+        // let x = 3;
+        // x===2 ? alert('da') : alert('ne');
+
+        // let x = 2;
+        // let y = 10;
+        // if (x > 0 && y > 0){
+        //     alert('da');
+        // }
+
+        // alert('kakoe nazvanie');
+        // const X = +prompt('chislo bistro napisal', '');
+        // if (X > 0){
+        //     alert('1');
+        // }else if(X < 0) {
+        //     alert('-1');
+        // }else if(X===0) {
+        //     alert('0');
+        // }else {
+        //     alert('ti daunicio');
+        // }
+
+        // let x = -1;
+        // do{
+        //     alert(x);
+        // }while(x>0);
+
+        // while (x > 0){
+        //     console.log(x);
+        //     x += 1;
+        // }
+
+        // let x = 10;
+        // let y = 2;
+
+        // function resultPlus(num1 = 0, num2 = 0) {
+        //     let z = num1 + num2;
+        //     console.log(z);
+        // }
+        // resultPlus(5, 6);
+
+        // function resultMinus() {
+        //     let z = x - y;
+        //     console.log(z);
+        // }
+        // resultMinus();
+
+        // function resultMultiplication() {
+        //     let z = x*y;
+        //     console.log(z);
+        // }
+        // resultMultiplication();
+
+        // function resultDivision() {
+        //     let z = x/y;
+        //     console.log(z);
+        // }
+        // resultDivision();
+
+
+
+        // function resultPlus(num1, num2 = 0, num3 = 0, num4 = 0) {
+        //     return num1 + num2 + num3 + num4;
+        // }
+        
+
+        // function resultMinus(num1, num2 = 0, num3 = 0, num4 = 0) {
+        //     return num1 - num2 - num3 - num4;
+        // }
+
+        // function resultMultiplication(num1, num2 = 0, num3 = 0, num4 = 0) {
+        //     return num1* num2 * num3 * num4;
+        // }
+
+        // function resultDivision(num1, num2 = 0, num3 = 0, num4 = 0) {
+        //     return num1 / num2 / num3 / num4;
+        // }
+        
+
+        // let plus = resultPlus;
+        // let minus = resultMinus;
+        // let multiplication = resultMultiplication;
+        // let division = resultDivision;
+
+        // console.log(plus(1,2,3,4));
+        // console.log(minus(1,2,3,4));
+        // console.log(multiplication(1,2,3,4));
+        // console.log(division(1,2,3,4));
+
+
+
+
+        // function compareNumbers(x,y) {
+        //     if (x===y) {
+        //         return 'equal';
+        //     } else if (x>y) {
+        //         return 'X greater';
+        //     }
+        //     else {
+        //         return 'X less';
+        //     }
+        // }
+        // console.log(compareNumbers(9 , 10))
+
+        // function compareNumbers(x,y) {
+        //     if (x === y) return "equal";
+        //     return x > y ? "X greater" : "X less";
+        // }
+        // console.log(compareNumbers(11, 10));
+
+
+
+        // function resultPlus(...rest)
+
+
+        // function confirmAge(age) {
+        //     return (age>18) || confirm('Roduki razreshili?');
+        // }
+        // console.log(confirmAge(18));
+
+
+        // function min(a,b) {
+        //     if (a<b) {
+        //         return a;
+        //     } else if (a>b) {
+        //         return b;
+        //     }
+        //     else {
+        //         return a=b;
+        //     }
+        // }
+
+        // console.log(min(2,2));
+
+
+
+
+
+            
+        
+        // function setPow(x,n) {
+        //     let res=1;
+        //     for (i=1; i<=n; i++) {
+        //        res = res*x;
+        //     }
+        //     return res;
+        // };
+        // alert (setPow(x = +prompt("Vvedi chislo", ''), n = +prompt("VVedi stepen", '')));
+
+        
+
+
+
+
+        // function recursion() {
+        //     console.log('ha');
+        //     return recursion();
+        // }
+        // recursion();
+
+
+
+
+
+
+        // function a() {
+        //     return 5
+        // }
+        // function b() {
+        //     return 5
+        // }
+        // function abrakadabra(fn1, fn2) {
+        //     return fn1() + fn2();
+        // }
+        // console.log(abrakadabra(a, b));
+
+
+
+
+
+        // const user = {
+        //     name: 'Ivan',
+        //     age: 22,
+        //     isAdmin: false,
+        //     speak: (x)=>console.log(x),
+        //     "double name": 'lalalal',
+        //     2: 'uuuuuuu',
+        // };
+
+        // user.surname = 'vasya';
+
+        // console.log(user);
+        // console.log(user["2"]);
+
+        // console.log('name' in user);
+        // for (let key in user) {
+        //     console.log(key)
+        // }
+
+        // for (let key in user) {
+        //     console.log(user[key])
+        // }
+        
+        // console.log(Object.values(user));
+
+
+
+
+
+
+        // const fruit = prompt('input fruit', 'apple');
+        // const count = +prompt('input count', 0);
+
+        // const list = {
+        //     [fruit] : count,
+        // };
+
+        // console.log(list[fruit]);
+
+
+
+
+
+
+        // const user = {
+        //     name: 'Ivan',
+        //     age: 22,
+        //     isAdmin: false,
+        // };
+        // // объект не копируется, а ссылается на ячейку в памяти
+
+        // const admin = Object.assign({}, user); // способ если есть различия в объектах
+
+        // const superUser = {...user};
+        // user.name = 'dodik';
+
+        // const userSecond = {};
+        // for (let key in user) {
+        //     userSecond[key] = user[key];
+        // };
+        // // console.log(userSecond);
+        // delete user.age;
+        // userSecond.banan = 2;
+        // userSecond.name = 'vasya';
+        // console.log(userSecond);
+        // console.log(user);
+        // console.log(superUser);
+        // console.log(admin);
+
+
+
+
+        const user = {
+            name: 'Ivan',
+            age: 22,
+            isAdmin: false,
+            ipConfig : {
+                ip : '123.235.354.44',
+                DNS : 2544985455,
+                macAdres : 'dfhbgi54sgiu',
+            }
+        };
+        
+        // let newUser = {};
+
+        // const deepCopy = (obj) => {
+        //     for (let key in obj) {
+        //         if (typeof obj[key] === "object") {
+        //             newUser[key] = deepCopy(obj[key])
+        //         }
+        //         else {
+        //             newUser[key] = user[key];
+        //         }
+        //         console.log(newUser);
+        //     };
+
+        // deepCopy(user);
+
+
+        const deepCopy = (obj) => {
+        let copyObject = {};
+        for(let key in obj) {
+            if(typeof obj[key] === 'object') copyObject[key] = deepCopy(obj[key]);
+            else copyObject[key] = obj[key];
+        }
+        return copyObject;
+    };
+
+    
+
+
+
+
+        
+
+        // is type of primitive = вызови deepCopy
+
+
+
+
+
+
+
+
+
+        // const god = {
+        //     gender: "Man",
+        //     age: 33,
+        //     name: "jesus",
+        //     magic: () => console.log("Turn H2O to wine"),
+        //     resurection: () => console.log("I\'m alive, bitch!"),
+        // };
+
+        // god.magic();
+
+
+        // const user = {
+        //     name: "Владик",
+        //     login: "super228",
+        //     pass: 1488,
+        //     sayHi: function() {console.log("Привет, меня зовут " + this.name)},
+        // };
+
+        // user.sayHi();
+
+
+
+
+        
+        // const user = {
+        //     name: "Владик",
+        //     login: "super228",
+        //     pass: 1488,
+        //     sayHi: function() {console.log("Привет, меня зовут " + this.name)},
+        // };
+
+        // user.sayHi();
+
+
+
+
+        // (console.log('hello'))();
+
+
+
+
+        // function God (name, gender) {
+        //     this.name = name;
+        //     this.gender = gender;
+        // };
+
+        // const adam = new God("Adam", "male");
+        // const eva = new God("Eva", "female");
+
+        // console.log(adam.name, adam.gender, eva.name, eva.gender);
+
+
+
+
+        
+
+
+        // let ask = (question, yes, no) => {
+        //     if (confirm(question)) yes()
+        //     else no(); 
+        // };
+
+        // ask("Вы согласны?",
+        //   () => alert("Вы согласились."),
+        //   () => alert("Вы отменили выполнение.")
+        // );
+
+
+
+
+
+
+        // const fact = (n) => {
+        //     if (n===1) {
+        //         return n;
+        //     }
+        //     else {
+        //         return n *= fact(n-1);
+        //     }
+        //     return n;
+        // }
+
+        // console.log( fact(10) );
+
+        </script>
+</body>
+</html>
