@@ -1,0 +1,138 @@
+.font {
+    color: white;
+}
+
+
+.sheeps {
+    background-image: url('/img/background3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100vw - 17px);
+    height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    transform-origin: left bottom;
+    transform: rotate(270deg);
+    top: calc(100vh - 50px);
+    left: 50px;
+    height: 50px;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(0, 0, 0, 0.8);
+
+    &__position {
+            text-decoration: none;
+            padding: 10px 25px;
+            font-family: 'NunitoR';
+        }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.8);
+    margin-left: 50px;
+    height: 100vh;
+
+        &__logo {
+            margin-bottom: 5vh;
+            margin-top: 7vh;
+        }
+
+        &__introduction {
+            font-family: 'NunitoSB';
+            font-size: 30.21pt;
+            margin-bottom: 6vh;
+        }
+
+        &__slogan {
+            font-family: 'NunitoL';
+            font-size: 30.21pt;
+            margin-bottom: 10vh;
+        }
+
+        &__button {
+           width: 265px;
+           height: 70px;
+           background-color: transparent;
+           border: solid 3px white;
+           box-sizing: border-box;
+           font-family: 'NunitoSB';
+           font-size: 30.21pt;
+           margin-bottom: 2vh;
+        }
+
+        &__button:hover{
+            cursor: pointer;
+        }
+
+        &__arrow {
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 93vh;
+            left: calc(50vw - 21px);
+            margin-left: 18px;
+        }
+}
+
+@media (max-width : 680px) {
+    .sheeps {
+        width: 100%;
+        height: calc(100% - 25px)
+    }
+
+    .menu {
+        position: fixed;    
+        transform-origin: top;
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:rgb(0, 0, 0);
+
+        &__position {
+            padding: 25px 0;
+        }
+    }
+
+    .wrapper {
+        margin-left: 0;
+        margin-top: 50px;
+        justify-content: space-around;
+
+        &__logo {
+            margin: 0;
+        }
+
+        &__introduction {
+            margin: 0;
+            text-align: center;
+        }
+
+        &__slogan {
+            margin: 0;
+            text-align: center;
+        }
+
+        &__button {
+            margin: 0;
+        }
+
+        &__arrow {
+            visibility: hidden;
+        }
+    }
+}
+
+

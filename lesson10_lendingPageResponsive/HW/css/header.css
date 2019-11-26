@@ -1,0 +1,153 @@
+.font {
+  color: white;
+}
+
+.sheeps {
+  background-image: url("/img/background3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100vw - 17px);
+  height: 100vh;
+}
+
+.menu {
+  position: fixed;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: calc(100vh - 50px);
+  left: 50px;
+  height: 50px;
+  width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu__position {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-family: 'NunitoR';
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 50px;
+  height: 100vh;
+}
+
+.wrapper__logo {
+  margin-bottom: 5vh;
+  margin-top: 7vh;
+}
+
+.wrapper__introduction {
+  font-family: 'NunitoSB';
+  font-size: 30.21pt;
+  margin-bottom: 6vh;
+}
+
+.wrapper__slogan {
+  font-family: 'NunitoL';
+  font-size: 30.21pt;
+  margin-bottom: 10vh;
+}
+
+.wrapper__button {
+  width: 265px;
+  height: 70px;
+  background-color: transparent;
+  border: solid 3px white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'NunitoSB';
+  font-size: 30.21pt;
+  margin-bottom: 2vh;
+}
+
+.wrapper__button:hover {
+  cursor: pointer;
+}
+
+.wrapper__arrow {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 93vh;
+  left: calc(50vw - 21px);
+  margin-left: 18px;
+}
+
+@media (max-width: 680px) {
+  .sheeps {
+    width: 100%;
+    height: calc(100% - 25px);
+  }
+  .menu {
+    position: fixed;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: black;
+  }
+  .menu__position {
+    padding: 25px 0;
+  }
+  .wrapper {
+    margin-left: 0;
+    margin-top: 50px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .wrapper__logo {
+    margin: 0;
+  }
+  .wrapper__introduction {
+    margin: 0;
+    text-align: center;
+  }
+  .wrapper__slogan {
+    margin: 0;
+    text-align: center;
+  }
+  .wrapper__button {
+    margin: 0;
+  }
+  .wrapper__arrow {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=header.css.map */
